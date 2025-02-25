@@ -10,18 +10,20 @@ body {
   font-family: "Inter";
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   margin: auto;
   background: hsl(0, 0%, 8%);
   height: 100vh;
   /* width: 100vh; */
 
   & #main {
-    height: 70vh;
+   
     background: hsl(0, 0%, 12%);
     display: flex;
     flex-direction: column;
-    width: 50vh;
+    /* width: 50vh; */
+    min-width: 200px;
+    max-width: 300px;
     /* height: 80vh; */
     justify-content: center;
     margin: auto;
@@ -41,6 +43,10 @@ body {
       justify-content: center;
       font-size: 14px;
       padding: 8px;
+      align-items: center;
+      & h1 {
+        text-align: center;
+      }
     }
 
     & #location {
@@ -54,6 +60,7 @@ body {
       color: hsl(0, 0%, 100%);
       display: flex;
       justify-content: center;
+      text-align: center;
       font-size: 14px;
       padding: 24px 8px 16px 8px;
     }
@@ -62,13 +69,17 @@ body {
       display: flex;
       justify-content: center;
       flex-direction: column;
+      width: 100%;
+      gap: 8px;
       & button {
         font-weight: 600;
-        margin: 6px;
+        /* margin: 6px; */
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 45vh;
+        /* width: 45vh; */
+        width: 100%;
 
         /* min-width: 170px; */
         background: hsl(0, 0%, 20%);
@@ -90,7 +101,7 @@ body {
 
     & #main {
       /* height: 10vh; */
-      max-width: 100px;
+      /* max-width: 100px; */
       & img {
       }
 
